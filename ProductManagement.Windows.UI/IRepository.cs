@@ -12,7 +12,7 @@ namespace ProductManagement.Windows.UI
         //CRUD
         void Add(Product product);
 
-
+        void AddProd();
 
         List<Product> GetProducts();
     }

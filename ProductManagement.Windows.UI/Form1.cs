@@ -46,5 +46,15 @@ namespace ProductManagement.Windows.UI
                 listBox2.Items.Add(item);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //lägg till info från forulär och skicka till produkter
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

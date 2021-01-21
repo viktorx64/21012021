@@ -19,6 +19,7 @@ namespace ProductManagement.Windows.UI
             //Vi fejkar lite produkter som start
             products.Add(new Product() { Name = "Kockkniv 30cm", Price = 100 });
             products.Add(new Product() { Name = "Skalkniv 10cm", Price = 25 });
+            products.Add(new Product() { Name = "Ostkniv 25cm", Price = 40});
         }
         public void Add(Product product)
         {
