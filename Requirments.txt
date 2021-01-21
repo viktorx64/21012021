@@ -1,0 +1,41 @@
+Vad vill vi göra? Vad är vårt uppdrag?
+
+Produkthantering inför e-handel för vår kund som säljer köksartiklar.
+
+Klassförslag: (substantiv, konkreta)
+-Product (price, name, description, id)
+-Customer (name, address, phone, mail)
+-ShoppingCart (products, customer)
+
+-Repository (CRUD)
+
+Arkitektur (abstrakt, övergripande, samverkan)
+-UI
+-Backend för att hantera produkterna
+-Datalagring (repository)
+-Affärsregler (dvs moms, shipping, minimiorder, kreditgodkännande etc)
+
+Kan vi se några Interface?
+Vi vill ha kopplingen abstrakt/konkret för att skapa implementationsfrihet
+
+-IRepository
+-ICustomer
+-IShoppingCart
+-IProduct
+
+Hur börjar jag koda?
+Identifiera och prioritera lämpliga Användningsfall (use cases)
+
+Persona: Kund (dvs köpare av våra produkter)
+--Se en lista över alla produkter
+--Välja en produkt ur listan och lägga den i ShoppingCart
+--Se vad jag har lagt i ShoppingCart (knapp visa/dölj)
+-Slutför beställning
+-
+
+Persona: Produktadministratör
+-Lägga till en ny produkt
+-Uppdatera information om en befintlig produkt
+-Ta bort en produkt
+-Se en lista över aktuella beställningar
+-
