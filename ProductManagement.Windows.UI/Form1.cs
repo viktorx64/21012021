@@ -53,6 +53,13 @@ namespace ProductManagement.Windows.UI
             String Name = textBox1.Text;
             int Price = int.Parse(textBox2.Text);
             MessageBox.Show($" {Name}  (£{Price})");
+            _repository.AddProd(Name, Price);
+
+            listBox1.Items.Clear();
+            foreach (var item in _repository.GetProducts())
+            {
+                listBox1.Items.Add(item);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

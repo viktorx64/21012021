@@ -26,9 +26,9 @@ namespace ProductManagement.Windows.UI
             products.Add(product);
         }
 
-        public void AddProd()
+        public void AddProd(String name, int price)
         {
-
+            products.Add(new Product() { Name = name, Price = price } );
         }
 
         public List<Product> GetProducts()
