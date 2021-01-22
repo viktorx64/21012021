@@ -11,10 +11,11 @@ namespace ProductManagement.Business.Concrete
     {
         public string Name { get; set; }
         public decimal Price { get; set; }
+        public int Id { get; set; }
 
         public override string ToString()
         {
-            return $"{Name} ({Price:C})";
+            return $"{Name} ({Price:C}) ({Id})";
         }
     }
 }
