@@ -52,8 +52,10 @@ namespace ProductManagement.Windows.UI
             //lägg till info från forulär och skicka till produkter
             String Name = textBox1.Text;
             int Price = int.Parse(textBox2.Text);
-            MessageBox.Show($" {Name}  (£{Price})");
+            MessageBox.Show($"you have inserted: {Name}  (£{Price})");
             _repository.AddProd(Name, Price);
+            textBox1.Text = "";
+            textBox2.Text = "";
 
             listBox1.Items.Clear();
             foreach (var item in _repository.GetProducts())
