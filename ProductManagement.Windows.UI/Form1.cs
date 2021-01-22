@@ -50,6 +50,9 @@ namespace ProductManagement.Windows.UI
         private void button2_Click(object sender, EventArgs e)
         {
             //lägg till info från forulär och skicka till produkter
+            String Name = textBox1.Text;
+            int Price = int.Parse(textBox2.Text);
+            MessageBox.Show($" {Name}  (£{Price})");
         }
 
         private void label1_Click(object sender, EventArgs e)

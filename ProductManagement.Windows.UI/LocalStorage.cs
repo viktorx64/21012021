@@ -26,6 +26,11 @@ namespace ProductManagement.Windows.UI
             products.Add(product);
         }
 
+        public void AddProd()
+        {
+
+        }
+
         public List<Product> GetProducts()
         {
             return products;
